@@ -1,0 +1,10 @@
+4 Pillars of OOP
+
+Polymorphism - many form
+Inheritance - being able to inherit or share behaviors and traits
+Encapsulation - data hiding, portability
+Abstraction - a way of simplifying complex implementations
+
+Class - blueprint to create an instance (object) - encapsulation
+Object - runtime entites that have a set of behaviors and properties - polymorphism 
+
