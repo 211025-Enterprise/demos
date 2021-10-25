@@ -34,7 +34,7 @@ Here you will find all of the notes from class aslong with study-guides, project
 | 12:45    | :speech_balloon: |           |           |          |         |
 | 1:00     | :pizza:          |  :pizza:  | :pizza:   | :pizza:  | :pizza: |
 | 2:00     | :speech_balloon: |           |           |          |         |
-| 3:00     | :speech_balloon: | :mag:     |           | :mag:    | :mag:   |
+| 3:00     | :speech_balloon: | :mag:     | :mag:     | :mag:    | :mag:   |
 | 4:00     | :speech_balloon: | :mag:     | :mag:     | :mag:    | :mag:   |
 | 5:00     | :speech_balloon: | :mag:     | :mag:     | :mag:    | :mag:   |
 
