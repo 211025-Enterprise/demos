@@ -29,33 +29,63 @@
 	multi line comment
 */
 
+// Access Modifiers
+//			global    package    subclass    class
+//	public		x	  x          x           x
+//	protected		  x          x		 x
+//	default			     	     x		 x
+//	private						 x
+
+
 public class Cat{ // class declaration
-	String name = "Tom";
-	double weight = 15;
+	public String name = "Tom";
+	protected double weight = 15;
 	private int age = 22;
-	String breed = "American Shorthair";
-	boolean isFixed = false;
+	private String breed = "American Shorthair";
+	protected boolean isFixed = false;
 	boolean isChipped = false;
 	String owner;
 	String color = "Blue/Grey";
 
-
-	public static void main(String[] args){
-		Cat newCat = new Cat(); // object instantiation
-		Cat newCat1; // object declaration
-		Cat cat2 = new Cat();
-		
-		newCat = cat2;
-		newCat1 = newCat;
-		System.out.println("age: " + newCat.age); //22
-		newCat.sleep();
-		newCat1.sleep();
-		cat2.sleep();
-		System.out.println("age: " + newCat.age); //25
+	// method overloading:
+	// no two methods of the same name, can share the same number 
+	// of arguments if the order and type of those arguments 
+	// are the same.
+	public Cat(){
 	}
 
+	public Cat(String name){
+		this.name = name;
+	}
+
+//	public Cat(String breed){ // not valid
+//		this.breed = breed;
+//	}
+
+	public Cat(String breed, int age){
+		this.breed = breed;
+		this.age = age;
+	}
+
+	public Cat(int age, String breed){ // valid, order is different
+		this.breed = breed;
+		this.age = age;
+	}
+
+	public Cat(int age){ // valid, BUT... it 
+		this.breed = breed;
+		this.age = age;
+	}
+
+	public String getBreed(){
+		return this.breed;
+	}
 
 	public int getAge(){
+		return this.age;
+	}
+
+	public int getAge(String something){
 		return this.age;
 	}
 
