@@ -7,6 +7,7 @@ Here you will find all of the notes from class aslong with study-guides, project
 
 > QC is important! It is meant to simulate the interview process. Check out [this guide on how to do well](https://github.com/211025-Enterprise/demos/blob/main/how-to-do-well-in-qc.md).
 
+
 ### Slides can be found [here](https://docs.google.com/presentation/d/1ICreBFyGVPUoAQGVwtFJU5XhJvFLp9OcHZ8EM8Wbq-I/edit?usp=sharing)
 
 ### Environment Setup Guide can be found [here](https://github.com/bpinkerton/environment-setup).
