@@ -1,4 +1,7 @@
 public class Increment{
+
+	Cat cat;
+	
 	public static void main(String [] args){
 		int x = 0;
 		++x;		1
@@ -7,4 +10,12 @@ public class Increment{
 		System.out.println(x);
 		System.out.println(x);
 	}
+}
+
+public class User{
+	Account account;
+}
+
+public class Account{
+	double balance;
 }
