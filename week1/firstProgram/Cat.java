@@ -33,7 +33,7 @@
 //			global    package    subclass    class
 //	public		x	  x          x           x
 //	protected		  x          x		 x
-//	default			     	     x		 x
+//	default			  X   	     		 x
 //	private						 x
 
 
@@ -58,6 +58,25 @@ public class Cat{ // class declaration
 		this.name = name;
 	}
 
+	
+	public Cat(int age){ // valid, BUT... it 
+		this.breed = breed;
+		this.age = age;
+	}
+
+	public Cat(long age){ // valid, BUT... it 
+		this.breed = breed;
+		this.age = age;
+	}
+
+	public Cat(float weight){
+	
+	}
+
+	public Cat(double weight){
+
+	}
+
 //	public Cat(String breed){ // not valid
 //		this.breed = breed;
 //	}
@@ -72,10 +91,6 @@ public class Cat{ // class declaration
 		this.age = age;
 	}
 
-	public Cat(int age){ // valid, BUT... it 
-		this.breed = breed;
-		this.age = age;
-	}
 
 	public String getBreed(){
 		return this.breed;

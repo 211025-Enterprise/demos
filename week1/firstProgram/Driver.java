@@ -52,10 +52,6 @@ public class Driver{
 				break;
 			default: System.out.println("Something went wrong...");
 				break;
-			
 		}
-
-		
-
 	}
 }
