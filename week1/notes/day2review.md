@@ -15,8 +15,8 @@
 	/
 	% - modulo/modulus - gives me the remainder (3 % 2 = 1)
 	()
-### Logical
-	&&
+### Logical shortcircuit
+	&&  
 	||
 
 ### Bitwise	x == 5 ^ y == 6 ^ z == 7    given 5, 6, 7 or true, true, false
@@ -43,3 +43,117 @@
 	/=
 	*=
 	%=
+
+## Access Modifiers	Same Class	Same Package subclass	Same Package Non-sub	Different Package sub	Different Package non-sub
+	private		x
+	default		x		x			x			
+	protected	x		x			x			x			
+	public		x		x			x			x			x
+
+
+Animal interface 
+	species
+	habitat
+	
+	feedingPatterns
+	feed();
+	sleep();
+	reproduce();
+
+class Dog implements Animal
+
+	feed(){
+		yummy
+	}
+
+class Dolphin implements Animal
+
+	feed(){
+	}
+}
+
+
+
+List<Animals> storeInventory = new ArrayList();
+
+	for(Animal a in storeInventory){
+		a.feed();
+		a.sleep();
+	}
+
+
+
+Dog dog = new Dog();
+dog.bark(); // woof
+
+Chihuahua c = new Chihuahua();
+
+
+public abstract class Business{
+	license
+	location
+	type
+
+	abstract openingProdures(); // interface
+
+	closingProcedure(){
+		location.lock();
+	}
+	
+}
+
+public class Pub extends Business{
+	public OP(){
+		location.unlock();
+	}
+	@Override
+	public closingProcedures(){
+		we don't close
+	}
+}
+
+Pub p = new Pub();
+
+## Non-Access Modifiers
+	final - 	you cannot change the data
+		variables - constant or immutable
+		methods - you can't override the method in a subclass
+		class - class can not be extended
+	static - 
+		variable - belongs to the class, not the instance. 
+		methods - same as above
+		class ? depends on the level of the class
+
+	abstract
+		methods
+		class - 
+	
+
+public abstract class Dog implements Animal, Interface2{
+	// this is the dogs 
+	String name = "Jeff";
+	...
+	abstract feed();
+	sleep(){
+		...
+	}
+}
+
+public class Husky extends Dog implement Walkable {
+	feed(){
+		...
+	}
+}
+
+RealEstateApp - 1
+HouseListingForce
+RevApartments
+RevaHouse
+RevEstate*
+BlueDoors
+BlueFin
+RevaListing
+Revasture
+Evature
+Realature*
+	

@@ -1,4 +1,4 @@
-
+package firstProgram;
 // Data Type
 // Primitive Types
 //	int
@@ -64,9 +64,9 @@ public class Cat{ // class declaration
 		this.age = age;
 	}
 
-	public Cat(long age){ // valid, BUT... it 
+	public Cat(long age){ // valid, BUT... it
 		this.breed = breed;
-		this.age = age;
+		this.age = (int) age;
 	}
 
 	public Cat(float weight){

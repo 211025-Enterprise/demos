@@ -1,4 +1,4 @@
-public class Day2{ 
+public class Day4{
     public static void main(String[] args) {
         int[] intArr = {1,2,3};
         // [0], [1], [2]
