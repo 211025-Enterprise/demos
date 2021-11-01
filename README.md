@@ -3,10 +3,9 @@
 This is the repository for the remote Fullstack Java Enterprise Revature batch starting October 25th, 2021.
 Here you will find all of the notes from class aslong with study-guides, project guidelines, and more resources.
 
-### Most Recent QC/Interview Guide can be found [here](https://github.com/211025-Enterprise/demos/blob/main/week1/qc-questions.md) :star:
+### Most Recent QC/Interview Guide can be found [here](https://github.com/211025-Enterprise/demos/blob/main/week2/README.md) :star:
 
 > QC is important! It is meant to simulate the interview process. Check out [this guide on how to do well](https://github.com/211025-Enterprise/demos/blob/main/how-to-do-well-in-qc.md).
-
 
 ### Slides can be found [here](https://docs.google.com/presentation/d/1ICreBFyGVPUoAQGVwtFJU5XhJvFLp9OcHZ8EM8Wbq-I/edit?usp=sharing)
 
@@ -27,12 +26,12 @@ Here you will find all of the notes from class aslong with study-guides, project
 
 - I have team meetings on **Tuesdays at 3:00pm EST** and **Wednesdays at 4:00pm EST**. You will be expected to remain in the zoom working on project or self/group study unless instructed otherwise.
 
-| Time EST | Monday           |  Tuesday    | Wednesday   | Thursday |   Friday   |
-| :------- | ---------------- |  -------    | ---------   | -------- |   -------  |
+| Time EST | Monday           | Tuesday     | Wednesday   | Thursday | Friday     |
+| :------- | ---------------- | ----------- | ----------- | -------- | ---------- |
 | 10:00    | :speech_balloon: | :pencil2:   |             |          | :computer: |
 | 11:00    | :speech_balloon: |             |             |          |            |
 | 12:45    | :speech_balloon: |             |             |          |            |
-| 1:00     | :pizza:          |  :pizza:    | :pizza:     | :pizza:  | :pizza:    |
+| 1:00     | :pizza:          | :pizza:     | :pizza:     | :pizza:  | :pizza:    |
 | 2:00     | :speech_balloon: |             |             |          |            |
 | 3:00     | :speech_balloon: | :clipboard: | :mag:       | :mag:    | :mag:      |
 | 4:00     | :speech_balloon: | :mag:       | :clipboard: | :mag:    | :mag:      |
