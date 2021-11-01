@@ -1,9 +1,15 @@
 public class Day2 {
+
+    @CustomAnnotation(name = "hello")
+    int x;
+
+    @CustomAnnotation(name = "hello")
     public static void main(String[] args) {
         stringConcat();
     }
 
     public static void stringConcat(){
+
         String s1 = "1"; // "1"
         String s2 = s1.concat("2"); // 1 + 2 = 12
         s2.concat("3"); // 12 + 3 = 123
