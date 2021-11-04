@@ -1,0 +1,105 @@
+Normalization-
+The process of breaking down data into smaller subsets of data
+
+Person
+id		name			address						Movies Rented
+1		Brandon Pinkerton	1234 Awesome Ave., San Antonio, TX 11111,	Pirates,
+					4389 Perfect Place, San Antonio, TX 11111,  	James Bond
+
+Person
+id		firstName	lastName	address1
+1		Brandon		Pinkerton	1234 Awesome Ave., San Antonio, TX 11111
+
+Person
+id(pk)	firstName	lastName	street		  city	       state  zipcode	moviesRented
+1	Brandon		Pinkerton	1234 Awesome Ave. San Antonio  TX     11112	Pirates
+1	Brandon		Pinkerton	4389 Perfect Place San Antonio TX     11111	JamesBond
+
+
+Person
+id	firstName	lastName	
+1	b		p		
+
+
+Movies
+id	name		person_id
+1	Pirates		1
+2	JamesBond	1
+
+Address
+id	street	city	state	zipcode	personId
+1	123 AA	sa	tx	11111	1
+2	438 PP	sa	tx	11111	1
+
+Address
+id	streetId	cityId	stateId 
+1	1		1	1
+2	2		1	1
+
+
+Street
+id	value
+1	123 AA
+2	438 PP
+
+City
+id	value
+1	San Antonio
+
+State
+id	value
+1	TX
+Normal Forms
+1NF
+2NF
+3NF - for p0
+3.5NF (BCNF)
+4NF
+5NF
+6NF - just a theory
+
+
+1NF
+- Each Cell Should Contain a Single Value
+- Each Record Needs to Be Unique
+
+2NF
+- Must Be In 1NF
+- Single column primary key that is not functionally dependant on any subset of candidate key
+
+3NF
+- Must Be In 2NF
+- Has no Transitive Functional Dependencies - 
+A transitive functional dependency is when changing a non-key column, 
+might cause any of the other non-key columns to change
+
+3.5NF or Boyce-Codd Normal Form
+- Must be in 3NF
+- A record must only have a single column primary candidate key. should have no other candidate keys
+
+4NF
+- Must be in 3.5NF
+- If no database table instance contains two or more, independent and multivalued data describing 
+the relevant entity, then it is in 4NF.
+
+5NF
+- Must be in 4NF
+- Must not be able to break the table down any farther.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
