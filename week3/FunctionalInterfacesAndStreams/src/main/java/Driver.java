@@ -1,12 +1,11 @@
-import java.util.ArrayList;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.Optional;
+import java.util.function.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Driver {
     public static void main(String[] args) {
@@ -57,7 +56,7 @@ public class Driver {
 
         System.out.println("filter less than 10: " + intList.stream().filter(lessThan10).collect(Collectors.toList()));
 
-        System.out.println("filter greater than 10: " + intList.stream().filter((x) -> x >= 10).collect(Collectors.toList()));
+        System.out.println("filter greater than 10: " + intList.stream().filter(x -> x >= 10).collect(Collectors.toList()));
 
         Function<Integer, Float> intToFloat = new Function<Integer, Float>() {
             @Override
@@ -91,17 +90,44 @@ public class Driver {
         A a = new A();
         A a2 = new A();
 
-        Arrays.asList(a,a2).stream().forEach(A::printSomething);
+        Arrays.asList(a,a2).stream().forEach(A::printSomething); // another method reference
 
 
+        Supplier<LocalDateTime> time = new Supplier<LocalDateTime>() {
+            @Override
+            public LocalDateTime get() {
+                return LocalDateTime.now();
+            }
+        };
+
+        Consumer<LocalDateTime> printDate = new Consumer<LocalDateTime>() {
+            @Override
+            public void accept(LocalDateTime localDateTime) {
+                System.out.println(localDateTime.format(DateTimeFormatter.ISO_DATE_TIME));
+            }
+        };
+        // get the value from the supplier
+        // do something with the value via the consumer
+        printDate.accept(time.get());
+
+        Optional<String> optional = Optional.empty(); /// wrapped value is currently null
+
+        if(optional.isPresent()){
+            System.out.println("Value is present");
+            System.out.println(optional.get());
+        } else{
+            System.out.println("Value is not present");
+        }
+
+        System.out.println(optional.orElse("Wello Horld."));
     }
 
 
     static class A{
-
-
         public static void printSomething(A a){
             System.out.println(a);
         }
     }
+
+
 }
