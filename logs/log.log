@@ -1,0 +1,6 @@
+WARN:Driver:13 - Printing a warn message
+ERROR:Driver:14 - Printing an error message
+FATAL:Driver:15 - Printing a fatal message
+WARN:Driver:20 - New runtime exception. Dunno what happened
+java.lang.RuntimeException: New runtime exception. Dunno what happened
+	at Driver.main(Driver.java:18)

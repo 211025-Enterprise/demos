@@ -6,9 +6,9 @@ import java.util.Arrays;
 public class ClassInspector {
 
     public static void inspectClass(Class<?> clazz){
-//        listPublicConstructors(clazz);
-//        listPublicFields(clazz);
-//        listPublicMethods(clazz);
+        listPublicConstructors(clazz);
+        listPublicFields(clazz);
+        listPublicMethods(clazz);
         listPrivateMethods(clazz);
     }
 
@@ -63,7 +63,6 @@ public class ClassInspector {
             }
         }
     }
-
     public static void listPrivateMethods(Class<?> clazz){
         System.out.println("Printing private methods of: " + clazz.getSimpleName());
         Method[] methods = clazz.getDeclaredMethods();
@@ -79,7 +78,7 @@ public class ClassInspector {
                 System.out.println("\tReturn type: " + method.getReturnType());
                 System.out.println("\tParameter Count: " + method.getParameterCount());
                 System.out.println("\tDeclaring Class: " + method.getDeclaringClass());
-                System.out.println("\tDeclared Annotations: " + Arrays.toString(method.getDeclaredAnnotationsByType(Override.class)));
+                System.out.println("\tDeclared Annotations: " + Arrays.toString(method.getDeclaredAnnotations()));
 
                 Parameter[] params = method.getParameters();
                 for(Parameter param : params){

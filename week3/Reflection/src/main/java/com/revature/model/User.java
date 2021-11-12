@@ -29,6 +29,7 @@ public class User {
         return username;
     }
 
+    @Test
     private void setUsername(String username) {
         this.username = username;
     }
@@ -37,7 +38,7 @@ public class User {
         return password;
     }
 
-    private void setPassword(String pass) {
+    private void setPassword(String password) {
         this.password = password;
     }
 
