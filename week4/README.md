@@ -38,7 +38,7 @@
 ## `Wednesday`
 
 :star: Use [these custom ORM examples](https://github.com/210517-Enterprise/demos/tree/main/week4/custom-orm-examples) to assist you in designing your own ORM framework.<br>
-:star: Use [this](https://github.com/210726-Enterprise/demos/blob/main/week4/p1-sample-readme.md) as a template/guideline for your own Project 1's README.md file.
+:star: Use [this](https://github.com/211025-Enterprise/demos/blob/main/week4/p1-sample-readme.md) as a template/guideline for your own Project 1's README.md file.
 
 1. Why is JDBC pooling important?
 
@@ -52,7 +52,7 @@
 
 ## `Thursday`
 
-- :star: review this [HTTP Study Guide](https://github.com/210726-Enterprise/demos/blob/main/week4/notes/http-notes.md) _You will be asked about HTTP on Monday_.
+- :star: review this [HTTP Study Guide](https://github.com/211025-Enterprise/demos/blob/main/week4/notes/http-notes.md) _You will be asked about HTTP on Monday_.
 
 - What is HTTP?
 
@@ -68,7 +68,7 @@
 
 ## `Friday`
 
-- To prepare for Monday, please study the [collective list of QC questions](https://github.com/210726-Enterprise/demos/blob/main/week4/qc-questions.md)
+- To prepare for Monday, please study the [collective list of QC questions](https://github.com/211025-Enterprise/demos/blob/main/week4/qc-questions.md)
   - Monday: 10AM quiz, 1-on-1's, 2pm - 3:30pm QC.
 
 <br>
