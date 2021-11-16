@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+// annotation based configuration. you can provide multiple url patterns for the endpoint to be reached on
 @WebServlet(urlPatterns = {"/annotation", "/nested/annotation"})
 public class AnnotationServlet extends HttpServlet {
 

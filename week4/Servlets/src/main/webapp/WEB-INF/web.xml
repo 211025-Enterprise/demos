@@ -9,13 +9,13 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>Beans</servlet-name>
+        <servlet-name>HelloServlet</servlet-name>
         <servlet-class>com.revature.servlet.HelloServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Beans</servlet-name>
-        <url-pattern>/can</url-pattern>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 
 </web-app>

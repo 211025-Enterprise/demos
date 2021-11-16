@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+// annotation based configuration. value = the url you want to reach the endpoint at
 @WebServlet(value = "/json")
 public class JSONServlet extends HttpServlet {
 
