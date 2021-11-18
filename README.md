@@ -3,7 +3,7 @@
 This is the repository for the remote Fullstack Java Enterprise Revature batch starting October 25th, 2021.
 Here you will find all of the notes from class aslong with study-guides, project guidelines, and more resources.
 
-### Most Recent QC/Interview Guide can be found [here](https://github.com/211025-Enterprise/demos/blob/main/week2/README.md) :star:
+### Most Recent QC/Interview Guide can be found [here](https://github.com/211025-Enterprise/demos/blob/main/week4/qc-questions.md) :star:
 
 > QC is important! It is meant to simulate the interview process. Check out [this guide on how to do well](https://github.com/211025-Enterprise/demos/blob/main/how-to-do-well-in-qc.md).
 
