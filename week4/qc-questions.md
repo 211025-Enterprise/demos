@@ -1,4 +1,4 @@
-# Upcoming QC Questions for Monday August 23rd:
+# Upcoming QC Questions for Monday Novemeber 22nd:
 
 > Topics: <br>
 >
