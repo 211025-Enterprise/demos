@@ -253,3 +253,42 @@ _Review the SQL notes [here](https://github.com/210726-Enterprise/demos/blob/mai
   * Use a volume or connect to external state management service
   * Volumes are file systems mounted to a container and exist on the host independent of the container
 
+### Servlets 
+
+What is a servlet? What about a servlet container? Which servlet container have you worked with?
+
+
+Describe the servlet class inheritance hierarchy. What methods are declared in each class or interface?
+
+
+How would you create your own servlet?
+
+
+What is the deployment descriptor? What file configures your servlet container?
+
+
+Explain the lifecycle of a servlet - what methods are called and when are they called?
+
+
+Is eager or lazy loading of servlets the default? How would you change this?
+
+
+What are some tags you would find in the web.xml file?
+
+
+What is the difference between the ServletConfig and ServletContext objects? How do you retrieve these in your servlet?
+
+
+What is the purpose of the RequestDispatcher?
+
+
+Explain the difference between RequestDispatcher.forward() and HttpServletResponse.sendRedirect()
+
+
+What is object mapping? Any Java libraries for this?
+
+
+How would you send text or objects back in the body of the HTTP response from a servlet?
+
+
+What is the difference between getParameter() and getAttribute() methods?
