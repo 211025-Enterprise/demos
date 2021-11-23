@@ -1,12 +1,16 @@
 package com.revature;
 
+import com.revature.repository.UserRepository;
 import com.revature.service.UserService;
 
 public class Driver {
 
-    private UserService userService;
+    private UserService userService = new UserService(new UserRepository());
 
 
+    public Driver() {
+
+    }
 
     public Driver(UserService userService) {
         this.userService = userService;

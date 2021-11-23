@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Driver bean, this will utilize CONSTRUCTOR INJECTION -->
+    <bean name="Driver" class="com.revature.Driver">
+        <constructor-arg name="motdService" ref="MOTDService" />
+    </bean>
+
+    <!-- MOTD Service, this will utilize SETTER INJECTION to inject a value via a setter method -->
+    <bean name="MOTDService" class="com.revature.service.MOTDService" init-method="initMotds">
+        <property name="defaultMotdIndex"> <!-- assumes we have a setter -> setDefaultMotdIndex() -->
+            <value>
+                4
+            </value>
+        </property>
+    </bean>
+</beans>
