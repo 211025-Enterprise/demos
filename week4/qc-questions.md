@@ -1,4 +1,4 @@
-# Upcoming QC Questions for Monday August 23rd:
+# Upcoming QC Questions for Monday Novemeber 22nd:
 
 > Topics: <br>
 >
@@ -213,3 +213,82 @@ _Review the SQL notes [here](https://github.com/210726-Enterprise/demos/blob/mai
     + Factory - abstracts away instantiation logic, usually used in conjunction with singleton pattern
 
 <br>
+
+### Docker
+
+* What is a container? How is it different from a VM?
+  * Containers are lightweight, they can share the underlying OS
+  * Containers package only the app and the environment needed to run the app
+  * Containers keep environments consistent for every deployment and isolate them from the rest of the system
+* What is the Docker Daemon?
+  * Underlying process that runs and manages the docker containers
+* What is a Docker image? Container?
+  * An image is like blueprint for a container
+  * An image is readonly, like a file; container is the instantiation and contains the running application
+* How is a Docker image different from a Docker container? How are the read/write layers different?
+  * Docker containers are built in layers; each line in a Dockerfile adds a layer
+  * A container adds a write layer
+  * When an image needs to be rebuilt, only the layer that changed needs to be built
+* List the steps to start Docker, create a Docker image, and spin up a container
+  1. Write a Dockerfile
+  2. Build the image `docker build <pathToDockerfile>`
+  3. Spin up the container `docker run <imageName>`
+* What is the relevance of the Dockerfile to this process? List some keywords in the Dockerfile.
+  * Dockerfile is the configuration file for an image/container
+  * Keywords: FROM, COPY, ADD, WORKDIR, ENV, CMD, RUN
+* What is the benefit to an image being built in Layers?
+  * Images can be composed from base images and keeps them lightweight / smaller size
+* What are some other Docker commands?
+  * `docker container ls`
+  * `docker attach`
+  * `docker kill`
+  * `docker help`
+  * `docker inspect`
+* What is a container registry? How would you retrieve and upload images to DockerHub?
+  * Holds images, either public or private
+  * Use `docker pull` and `docker push` to upload/download images
+* What is Docker compose and why is it useful?
+  * Write a yml config file for spinning up multiple containers at once
+* If you want to store state for a container, how does Docker recommend doing that?
+  * Use a volume or connect to external state management service
+  * Volumes are file systems mounted to a container and exist on the host independent of the container
+
+### Servlets 
+
+What is a servlet? What about a servlet container? Which servlet container have you worked with?
+
+
+Describe the servlet class inheritance hierarchy. What methods are declared in each class or interface?
+
+
+How would you create your own servlet?
+
+
+What is the deployment descriptor? What file configures your servlet container?
+
+
+Explain the lifecycle of a servlet - what methods are called and when are they called?
+
+
+Is eager or lazy loading of servlets the default? How would you change this?
+
+
+What are some tags you would find in the web.xml file?
+
+
+What is the difference between the ServletConfig and ServletContext objects? How do you retrieve these in your servlet?
+
+
+What is the purpose of the RequestDispatcher?
+
+
+Explain the difference between RequestDispatcher.forward() and HttpServletResponse.sendRedirect()
+
+
+What is object mapping? Any Java libraries for this?
+
+
+How would you send text or objects back in the body of the HTTP response from a servlet?
+
+
+What is the difference between getParameter() and getAttribute() methods?
