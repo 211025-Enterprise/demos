@@ -12,6 +12,12 @@ public class UserService {
     }
 
     public User getUserById(int id){
-        return userRepository.getUserById(id);
+        // we don't want to be dependent on this outcome
+        // in our tests, we create a Mock of the userRepository
+        return userRepository.getUserById(id); // instead, we supply what's returned so that we aren't dependent
+    }
+
+    public User getUserByUsername(String username){
+        return null;
     }
 }
