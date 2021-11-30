@@ -8,7 +8,7 @@ Application must leverage the full stack:
 - RDBMS for persistence 
 - API built with Java 8 and Spring 5
 - First iteration of the UI is due on December 10th and will be built with HTML, CSS and JS.
-- Second and findal iteration of the UI is due with the presentation on December 17 and will be built with React.
+- Second and final iteration of the UI is due with the presentation on December 17 and will be built with React.
 
 Technology framework requirements: 
 - Java API will use Hibernate to communicate with a PostGreSQL RDBMS 
