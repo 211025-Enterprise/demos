@@ -1,0 +1,131 @@
+<!-- HTML , HyperText Markup Language-->
+<!DOCTYPE html> <!-- telling the browser what version of what language-->
+<html>
+
+<head>
+    <!-- A section to define metatdata for the web page -->
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        td {
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        p {
+            color: white;
+            background-color: gray;
+        }
+
+        p:hover {
+            font-size: 22px;
+            background-color: fuchsia !important;
+        }
+    </style>
+
+    <script>
+        function submitForm() {
+            console.log(document.getElementById("name").value)
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav class="myClass">
+        this is a nav bar
+        <header>
+            this is a header inside of the nav
+        </header>
+    </nav>
+
+
+    <h1>Hello world from somewhere else!</h1>
+    <h2>Subtitle or Subheading</h2>
+    <h3>Description</h3>
+    <h4 class="myClass">smaller still</h4>
+    <h5>where even are we?</h5>
+    <h6>Can you even see me any more?</h6>
+
+    This is some text.<br>
+    <em>This is some emphasized text</em><br>
+    <strike>This is some striked out text</strike><br>
+    <b>Bold</b><br>
+    <strong>Strong</strong>
+
+    <p style="background-color: green;">This is some text inside of a paragraph tag</p>
+
+    <div>
+        <p>This is some text inside of a paragraph tag, inside of a div</p>
+    </div>
+    <section>
+        <p>This is a paragraph in a section</p>
+    </section>
+
+    <table style="border: 1px solid black">
+        <!-- table head -->
+        <tr>
+            <!-- defines the row-->
+            <th>Header One</th> <!-- table header-->
+            <th>Header Two</th>
+            <th>Header Three</th>
+        </tr>
+        <!-- table body-->
+        <tr style="background-color: lightgrey;">
+            <td>Row One Column One</td> <!-- table data-->
+            <td>Row One Column Two</td>
+            <td>Row One Column Three</td>
+        </tr>
+        <tr>
+            <td>Row Two Column One</td>
+            <td>Row Two Column Two</td>
+            <td>Row Two Column Three</td>
+        </tr>
+        <tr style="background-color: lightgrey;">
+            <td>Row Three Column One</td>
+            <td>Row Three Column Two</td>
+            <td>Row Three Column Three</td>
+        </tr>
+    </table>
+
+    <div style="margin-top: 10px;">
+        <form id="MyForm" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <input type="submit" id="submit" value="Submit" onsubmit="submitForm()" />
+        </form>
+    </div>
+
+    <div style="background: black; margin: 10px; padding: 10px; border: 1px solid green">
+        <p>Div 1</p>
+    </div>
+
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+
+    <div>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+    </div>
+</body>
+
+</html>
