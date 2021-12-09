@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="todo.css" />
+</head>
+
+<body>
+
+    <h3>My Todo's</h3>
+    <form onsubmit="return false;">
+        <input type="text" id="todo" placeholder="New Todo" />
+        <input type="submit" onclick="newTodo()" value="Add" />
+    </form>
+
+    <div>
+        <ul id="todoList"></ul>
+    </div>
+    <script src="todo.js"></script>
+</body>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<body>
+
+    <h1>User List</h1>
+    <form onsubmit="return false;">
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <input type="submit" onclick="addUser()" value="Submit">
+    </form>
+
+    <button id="getUsers">Get All Users</button>
+    <div id="userList"></div>
+
+    <script src="api.js"></script>
+</body>

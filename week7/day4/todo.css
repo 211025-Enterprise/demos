@@ -1,0 +1,8 @@
+.red {
+  background-color: #cf8282;
+  margin-right: 10px;
+}
+
+.red:hover {
+  background-color: green;
+}
