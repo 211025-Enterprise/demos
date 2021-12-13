@@ -2,7 +2,7 @@
 
 Below are a list of **HTML, CSS,** and **JavaScript** questions. <br>
 I highly reccomend you study **_each and every question on this page plus the following resource:_** <br>
-JavaScript is dense. **[Here are more questions to study](https://github.com/211025-Enterprise/demos/blob/main/week6/js-questions.md)**. _There is some overlap_.
+JavaScript is dense. **[Here are more questions to study](https://github.com/211025-Enterprise/demos/blob/main/week7/js-questions.md)**. _There is some overlap_.
 
 > Check out this [JavaScript Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) for more resources.<br>
 
