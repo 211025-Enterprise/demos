@@ -8,10 +8,15 @@
 // BigInt
 
 // Object
-// var variable;
-// let varaible2;
+// var variable is function scoped;
+// let variable2 is block scoped;
 let variable = 5;
 variable = "something";
+
+// Immediately Invoked Function
+(function () {
+  console.log(variable);
+})();
 
 let object1 = {
   objectId: 1,
