@@ -1,4 +1,4 @@
-import CloseButton from "react-bootstrap/CloseButton";
+import { CloseButton } from "react-bootstrap";
 
 function Todo({ todo, remove }) {
   return (
