@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Todo from "./Todo";
+
 import {
   InputGroup,
   FormControl,
@@ -17,6 +18,16 @@ export default function TodoList() {
 
   let [todoList, updateTodoList] = useState(tempList);
   let [todo, updateTodo] = useState("");
+
+  // catching every state change if we don't provide a second argument
+  // useEffect(callback function that executes based on a change of state in the dependency array,
+  //              the dependency array (state values that onchange, trigger the callback))
+
+  const funfun = () => {
+    console.log(todo);
+  };
+
+  useEffect(funfun, [todoList]);
 
   function removeTodo(todo) {
     let tempList = [...todoList];
